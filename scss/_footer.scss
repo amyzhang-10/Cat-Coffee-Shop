@@ -1,0 +1,8 @@
+footer {
+    border-top: 2px solid black;
+    @include flex-layout-row;
+    
+     h3 {
+            text-align: center;
+        }
+}

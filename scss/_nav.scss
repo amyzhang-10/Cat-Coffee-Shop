@@ -1,0 +1,36 @@
+// Main Navigation Styles
+nav {
+    // locally scoped variable
+    $height: 50px;
+    $border: 1px solid rgb(0, 0, 0);
+    
+    height: $height;
+
+    ul {
+        @include flatten;
+        @include ul-list;
+        display: flex;
+        
+    }
+
+    li {
+        flex: 1;
+    }
+
+    a {
+        display: block;
+        color: $text-color-dark;
+        line-height: $height;
+        text-align: center;
+        font-size: 2em;
+        text-decoration: none;
+        outline: none;
+        padding: 0 20px;
+        
+        #{$link-hover-selector} {
+            height: $height;
+            background-color: rgb(236, 133, 35);
+        }
+
+    }
+}
