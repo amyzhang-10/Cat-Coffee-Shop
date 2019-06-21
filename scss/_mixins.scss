@@ -31,3 +31,11 @@
     flex-wrap: wrap;
 }
 
+// Center elements in a flex
+// container
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
