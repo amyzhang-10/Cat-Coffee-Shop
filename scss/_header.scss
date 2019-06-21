@@ -1,8 +1,12 @@
+// header styles
 header {
     @include flex-layout-row;
     padding: $padding/2 $padding;
     align-items: center;
 }
+
+
+// menu button display none
 .menu_btn {
     display: none;
 }
