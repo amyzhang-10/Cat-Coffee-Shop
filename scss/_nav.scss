@@ -1,0 +1,39 @@
+// Main Navigation Styles
+nav {
+    // locally scoped variable
+    $height: 40px;
+    $border: 1px solid rgb(0, 0, 0);
+    
+    height: $height;
+    border-top: $border;
+
+    ul {
+        @include flatten;
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        flex: 1;
+    }
+
+    a {
+        display: block;
+        color: $text-color-dark;
+        border-right: $border;
+        line-height: $height;
+        text-align: center;
+        font-size: 1.2em;
+        text-decoration: none;
+        outline: none;
+        
+        #{$link-hover-selector} {
+            background-color: rgb(0, 0, 0);
+        }
+
+        @at-root nav li:last-child a {
+            border-right: none;
+        }
+
+    }
+}
