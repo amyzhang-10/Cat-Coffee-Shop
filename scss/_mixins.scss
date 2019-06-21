@@ -13,7 +13,7 @@
 // Mixin for clearing out
 // margins and padding and
 // setting the line-height to 1 
-// ...useful mainly on typographic elements
+// useful mainly on typographic elements
 @mixin flatten {
     margin: 0;
     padding: 0;
@@ -38,4 +38,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+//List style none for ul elements
+@mixin ul-list {
+    list-style: none;
 }
