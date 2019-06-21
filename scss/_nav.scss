@@ -8,7 +8,7 @@ nav {
 
     ul {
         @include flatten;
-        list-style: none;
+        @include ul-list;
         display: flex;
         
     }
