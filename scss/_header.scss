@@ -1,0 +1,8 @@
+header {
+    @include flex-layout-row;
+    padding: $padding/2 $padding;
+    align-items: center;
+}
+.menu_btn {
+    display: none;
+}
