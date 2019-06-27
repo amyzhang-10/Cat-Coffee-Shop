@@ -1,8 +1,9 @@
 footer {
-    border-top: 2px solid black;
-    @include flex-layout-row;
-    
-     h3 {
-            text-align: center;
-        }
+  padding: 20px;
+  border-top: 2px solid black;
+  @include flex-layout-row;
+
+  h3 {
+    text-align: center;
+  }
 }
