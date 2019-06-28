@@ -1,8 +1,14 @@
 footer {
-    border-top: 2px solid black;
-    @include flex-layout-row;
-    
-     h3 {
-            text-align: center;
-        }
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 2px solid black;
+  @include flex-layout-row;
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    text-align: center;
+  }
 }
