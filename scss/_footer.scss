@@ -4,6 +4,10 @@ footer {
   border-top: 2px solid black;
   @include flex-layout-row;
 
+  a {
+    text-decoration: none;
+  }
+
   h3 {
     text-align: center;
   }
