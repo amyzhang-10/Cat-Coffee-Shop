@@ -1,0 +1,26 @@
+.contact-section {
+  @include flex-layout-row;
+  justify-content: space-evenly;
+  .reservation-form {
+    // border-right: 2px solid black;
+    // padding-right: 50px;
+  }
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .contact-detail {
+    img {
+      padding-top: 40px;
+      height: 700px;
+    }
+    // border-left: 2px solid black;
+    // padding-left: 50px;
+    table {
+      padding-top: 40px;
+      font-size: 1.2em;
+    }
+  }
+}
