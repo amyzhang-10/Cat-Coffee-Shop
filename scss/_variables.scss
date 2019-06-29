@@ -8,7 +8,8 @@ $text-color-dark: black;
 $text-color-light: white;
 
 // Fonts
-
+$body-font: "Ubuntu", sans-serif;
+$paragraph-font: "Raleway", sans-serif;
 
 // Typographic Defualts
 $line-height: 1.4;
@@ -18,11 +19,10 @@ $padding: 30px;
 // Grid Values
 $gutter: 2;
 
-
 // Function to
 // Convert Px to Ems
-@function em($px, $bc: 16){
-    @return #{$px/$bc}em; 
+@function em($px, $bc: 16) {
+  @return #{$px/$bc}em;
 }
 
 // Media Query Breakpoints
@@ -33,4 +33,4 @@ $phoneLandscape: em(670);
 $phonePortrait: em(420);
 
 // Utility variables
-$link-hover-selector: '&:hover, &:focus, &:active';
+$link-hover-selector: "&:hover, &:focus, &:active";
