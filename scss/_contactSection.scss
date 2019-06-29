@@ -1,4 +1,3 @@
 .contact-section {
-  display: flex;
-  justify-content: space-between;
+  @include flex-layout-row;
 }
