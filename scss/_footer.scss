@@ -3,6 +3,7 @@ footer {
   padding: 20px;
   border-top: 2px solid black;
   @include flex-layout-row;
+  justify-content: space-evenly;
 
   a {
     text-decoration: none;
@@ -11,8 +12,10 @@ footer {
   h3 {
     text-align: center;
   }
+}
 
-  @media (max-width: $tabletPortrait) {
-    display: block;
+@media (max-width: $tabletPortrait) {
+  footer {
+    @include flex-center;
   }
 }
