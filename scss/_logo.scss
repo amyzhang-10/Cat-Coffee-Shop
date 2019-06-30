@@ -1,23 +1,25 @@
 a {
   text-decoration: none;
   .logo1 {
-    max-width: 80px;
+    max-width: 65px;
     height: auto;
   }
   .logo2 {
     max-width: 100%;
-    height: 70%;
+    height: 45px;
   }
 }
 
-@media (max-width: $phoneLandscape) {
+@media (max-width: $phonePortrait) {
   a {
-    //flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .logo1 {
-      max-width: 50px;
+      max-width: 60px;
     }
     .logo2 {
-      max-width: 50%;
+      height: 20px;
     }
   }
 }

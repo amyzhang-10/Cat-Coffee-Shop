@@ -1,9 +1,8 @@
 footer {
   margin: 0 auto;
-  padding: 20px;
-  border-top: 2px solid black;
+  padding: $padding;
+  border-top: 2px solid #000000;
   @include flex-layout-row;
-  justify-content: space-evenly;
 
   a {
     text-decoration: none;
@@ -11,6 +10,22 @@ footer {
 
   h3 {
     text-align: center;
+  }
+  .social-media {
+    img:first-child {
+      max-width: 60px;
+      height: 60px;
+    }
+    img:last-child {
+      max-width: 60px;
+      height: 60px;
+    }
+  }
+
+  .address {
+    img {
+      max-width: 25px;
+    }
   }
 }
 

@@ -1,15 +1,10 @@
 table {
   border: none;
-  // width: 100%;
 
-  h3 {
-    padding: 10px;
+  margin-top: 30px;
+  caption {
+    margin-bottom: 10px;
     font-size: 1.6em;
-  }
-
-  img {
-    padding-top: 10px;
-    width: 50px;
   }
 }
 td {
@@ -20,10 +15,10 @@ td {
 @media (max-width: $tabletPortrait) {
   table {
     h3 {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
   td {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 }
