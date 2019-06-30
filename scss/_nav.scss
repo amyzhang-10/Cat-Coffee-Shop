@@ -32,4 +32,39 @@ nav {
       cursor: pointer;
     }
   }
+
+  @media (max-width: $desktopMedium) {
+    display: none;
+    height: auto;
+    border-top: none;
+    overflow: hidden;
+    width: calc(100% + 60px);
+
+    nav.activated {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .show & {
+      display: block;
+    }
+    ul {
+      @include flex-center;
+      text-align: center;
+    }
+
+    li {
+      width: 100%;
+    }
+
+    a {
+      line-height: 50px;
+      border-right: none;
+      border-top: $border;
+
+      #{$link-hover-selector} {
+        background-color: rgb(236, 133, 35);
+        cursor: pointer;
+      }
+    }
+  }
 }
