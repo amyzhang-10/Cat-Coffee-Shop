@@ -3,7 +3,6 @@ nav {
   // locally scoped variable
   $height: 76px;
   $border: 1px solid rgb(0, 0, 0);
-
   height: $height;
 
   ul {
@@ -17,7 +16,6 @@ nav {
   }
 
   a {
-    font-weight: bold;
     display: block;
     color: $text-color-dark;
     line-height: $height;
@@ -26,22 +24,22 @@ nav {
     text-decoration: none;
     outline: none;
     padding: 0 25px;
+    cursor: pointer;
 
     #{$link-hover-selector} {
       height: $height;
       background-color: rgb(236, 133, 35);
-      cursor: pointer;
     }
   }
 
-  @media (max-width: $desktopMedium) {
+  @media (max-width: $tabletLandscape) {
     position: absolute;
     top: 0%;
     left: 0;
     width: 100%;
     min-height: 90vh;
     margin: 0;
-    background-color: rgba(white, 0.6);
+    background-color: rgba(white, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +51,6 @@ nav {
     }
 
     .show & {
-      // display: block;
       transform: scale(1.2);
       transition: 0.3s;
     }
@@ -71,12 +68,11 @@ nav {
     }
 
     a {
-      line-height: 50px;
       border-top: $border;
 
       #{$link-hover-selector} {
+        height: $height;
         background-color: rgb(236, 133, 35);
-        cursor: pointer;
       }
     }
   }

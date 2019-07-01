@@ -1,7 +1,9 @@
+//Hamburger styles
+
 .menu_btn {
   display: none;
 
-  @media (max-width: $desktopMedium) {
+  @media (max-width: $tabletLandscape) {
     display: block;
     width: 40px;
     background-color: transparent;

@@ -1,3 +1,4 @@
+//caontact-details section Styles
 .contact-section {
   @include flex-layout-row;
   justify-content: space-evenly;
@@ -15,5 +16,11 @@
       padding-top: 40px;
       height: 600px;
     }
+  }
+}
+
+@media (max-width: $tabletLandscape) {
+  .contact-section {
+    @include flex-center;
   }
 }
