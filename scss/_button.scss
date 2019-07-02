@@ -11,13 +11,6 @@
   }
 }
 
-@media (max-width: $tabletPortrait) {
-  .booknow-btn button {
-    font-size: 1.2em;
-    padding: 10px;
-  }
-// Button
-
 // adoption page back to top button style
 
 #back-to-top-button {
@@ -65,7 +58,8 @@
   position: absolute;
   z-index: 5;
   top:40%;
-  left: 13%;
+  left: 30%;
+  transform: translate(-50%, -50%);
   padding:10px;
   border-radius: 20px;
   font-size: 1.2em;
@@ -73,4 +67,12 @@
   background: rgb(231, 143, 11);
   font-family: $header-font;
 }
-}
+
+
+// // Button
+// @media (max-width: 1980px) {
+//   .booknow-btn button {
+//     font-size: 1.2em;
+//     padding: 10px;
+//   }
+// }
