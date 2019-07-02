@@ -5,20 +5,20 @@
 // with margin-left: auto
 // and margin-right: auto;
 @mixin margin-center {
-    margin: {
-        left: auto;
-        right: auto;
-    }
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 
 // Mixin for clearing out
 // margins and padding and
-// setting the line-height to 1 
+// setting the line-height to 1
 // useful mainly on typographic elements
 @mixin flatten {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 // Layout Mixins
@@ -27,23 +27,37 @@
 // and evenly spacing out the
 // elements along the row
 @mixin flex-layout-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 // Center elements in a flex
 // container
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 //List style none for ul elements
 @mixin ul-list {
-    list-style: none;
+  list-style: none;
+}
+
+// Visually hide an element but
+// still make it accessible to
+// a screen reader
+@mixin visually-hidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
 }
 
 

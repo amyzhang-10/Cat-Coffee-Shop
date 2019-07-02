@@ -57,42 +57,94 @@
       <!--End of header-->
 
       <main>
-        <div class="banner">
-          <div class="banner-image"></div>
-          <div class="hero-text">
-            <span>
-              <h1>WELCOME</h1>
-            </span>
-            <span>
-              <h3>
-                Enjoy the Drinks
-                <br />
-                Pet the Cats
-                <br /><br />
-                Reservations <br />
-                are Highy Encouraged
-              </h3>
-            </span>
+        <div class="contact-section">
+          <section class="reservation-form">
+            <form action="/" method="POST">
+              <h3>Reserve Your Cuddles Here!</h3>
 
-            <form action="adoption.html" class="booknow-btn">
-              <Button>BOOK NOW</Button>
+              <div class="input-group text-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+
+              <div class="input-group email-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="input-group phone-group">
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone" required />
+              </div>
+
+              <div class="input-group date-group">
+                <label for="date">Date: </label>
+                <input type="date" name="date" id="date" required />
+              </div>
+
+              <div class="input-group time-group">
+                <label for="time">Time: </label>
+                <input type="time" name="time" id="time" required />
+              </div>
+
+              <div class="input-group people-group">
+                <label for="people">Number of people: </label>
+                <select name="people" id="people" required>
+                  <option value="select" selected disabled>Select</option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                </select>
+              </div>
+
+              <div class="input-group textarea-group">
+                <label for="message">Special Instructions:</label><br />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="60"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="submit-group">
+                <input type="submit" value="Make a Reservation" />
+              </div>
             </form>
-          </div>
-        </div>
-        <!--End of banner-->
+            <!--End of form-->
+          </section>
+          <!--End of reservation-form section-->
 
-        <section class="contents">
-          <article>
-            <span><p>What is Cat & Coffee</p></span>
-            <span>
-              <p>
-                Cat & Coffee is designed with wide open spaces and many toys We
-                also provide comfortable sofas and armchairs for customers. This
-                is a home for 12 - 15 adoptable cats.
-              </p>
-            </span>
-          </article>
-        </section>
+          <section class="contact-detail">
+            <h3>Contact Us</h3>
+            <img
+              src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/map-screen-shot.png"
+              alt="Map Image"
+            />
+            <table>
+              <tr>
+                <td>Address:</td>
+                <td>
+                  333 Cooney Rd., Vancouver,<br />
+                  BC V3B 6N0
+                </td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>(778)-000-0000</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>ccs@gmail.com</td>
+              </tr>
+            </table>
+
+            <!--End of table-->
+          </section>
+          <!--End of contact-details section-->
+        </div>
+        <!--End of contact-section-->
       </main>
       <!--End of main-->
 
@@ -179,8 +231,6 @@
     <!--End of wrapper-->
 
     <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
     <script src="scripts/script.js"></script>
   </body>
   <!--End of body-->

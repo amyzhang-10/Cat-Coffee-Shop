@@ -1,0 +1,29 @@
+//table section Styles
+footer,
+.contact-detail {
+  table {
+    border: none;
+    margin-top: 30px;
+    caption {
+      margin-bottom: 10px;
+      font-size: 1.6em;
+    }
+  }
+  td {
+    padding: 10px;
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: $tabletPortrait) {
+  footer {
+    table {
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+    td {
+      font-size: 1em;
+    }
+  }
+}

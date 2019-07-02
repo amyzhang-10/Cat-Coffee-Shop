@@ -1,3 +1,21 @@
+//Booknow button Styles
+.booknow-btn button {
+  padding: 16px;
+  background-color: white;
+  border-radius: 15%;
+  font-size: 1.6em;
+
+  #{$link-hover-selector} {
+    background-color: rgb(236, 133, 35);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $tabletPortrait) {
+  .booknow-btn button {
+    font-size: 1.2em;
+    padding: 10px;
+  }
 // Button
 
 // adoption page back to top button style

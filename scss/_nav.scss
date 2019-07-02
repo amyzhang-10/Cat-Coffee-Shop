@@ -1,36 +1,79 @@
 // Main Navigation Styles
 nav {
-    // locally scoped variable
-    $height: 50px;
-    $border: 1px solid rgb(0, 0, 0);
-    
-    height: $height;
+  // locally scoped variable
+  $height: 76px;
+  $border: 1px solid rgb(0, 0, 0);
+  height: $height;
 
+  ul {
+    @include flatten;
+    @include ul-list;
+    display: flex;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  a {
+    display: block;
+    color: $text-color-dark;
+    line-height: $height;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    outline: none;
+    padding: 0 25px;
+    cursor: pointer;
+
+    #{$link-hover-selector} {
+      height: $height;
+      background-color: rgb(236, 133, 35);
+    }
+  }
+
+  @media (max-width: $tabletLandscape) {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0;
+    background-color: rgba(white, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    z-index: 1;
+
+    nav.activated {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .show & {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
     ul {
-        @include flatten;
-        @include ul-list;
-        display: flex;
-        
+      @include flex-center;
+      text-align: center;
+      width: 200px;
     }
 
     li {
-        flex: 1;
+      width: 100%;
+    }
+    li:last-child {
+      border-bottom: $border;
     }
 
     a {
-        display: block;
-        color: $text-color-dark;
-        line-height: $height;
-        text-align: center;
-        font-size: 2em;
-        text-decoration: none;
-        outline: none;
-        padding: 0 20px;
-        
-        #{$link-hover-selector} {
-            height: $height;
-            background-color: rgb(236, 133, 35);
-        }
+      border-top: $border;
 
+      #{$link-hover-selector} {
+        height: $height;
+        background-color: rgb(236, 133, 35);
+      }
     }
+  }
 }
