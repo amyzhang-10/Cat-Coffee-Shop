@@ -1,0 +1,41 @@
+// Rservation form Styles
+.input-group {
+  padding: 12px;
+  font-size: 1.5em;
+  text-align: left;
+  width: 100%;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 2px;
+  margin: 4px 2px;
+  font-size: 0.7em;
+  outline: none;
+  border-radius: 4px;
+}
+//   input:focus {
+//     background-color: rgb(236, 133, 35);
+//     color: White;
+//   }
+
+select {
+  font-size: 1em;
+}
+
+.textarea-group {
+  padding: 12px;
+  margin-bottom: 40px;
+}
+
+.submit-group {
+  input {
+    font-size: 1.5em;
+    width: 100%;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgb(236, 133, 35);
+  }
+}
