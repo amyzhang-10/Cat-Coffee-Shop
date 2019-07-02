@@ -1,0 +1,26 @@
+//caontact-details section Styles
+.contact-section {
+  @include flex-layout-row;
+  justify-content: space-evenly;
+
+  h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .contact-detail {
+    text-align: center;
+    img {
+      padding-top: 40px;
+      height: 600px;
+    }
+  }
+}
+
+@media (max-width: $tabletLandscape) {
+  .contact-section {
+    @include flex-center;
+  }
+}

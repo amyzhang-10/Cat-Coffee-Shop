@@ -1,3 +1,28 @@
+//Body Styles
 body {
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+// Adoption page body style
+.adoption-introduction{
+    text-align: center;
+    margin:8% 8%;
+ }
+
+.adoption-introduction h1{
+    margin-bottom:30px;
+    font-family: $header-font;
+}
+.adoption-p{
+    margin-left:20%;
+    margin-right: 20%;
+    line-height: 1.8;
+    font-family:$opening-font;
+}
+
+
+
+// Adoption page body style end
