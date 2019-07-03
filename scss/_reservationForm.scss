@@ -1,7 +1,7 @@
 // Rservation form Styles
 .input-group {
-  padding: 12px;
-  font-size: 1.5em;
+  padding: 10px;
+  font-size: 1.3em;
   text-align: left;
   width: 100%;
 
@@ -22,14 +22,19 @@
 //     color: White;
 //   }
 
+.people-group {
+  select {
+    font-size: 1em;
+  }
+}
 .textarea-group {
-  padding: 12px;
+  padding: 10px;
   margin-bottom: 40px;
 }
 
 .submit-group {
   input {
-    font-size: 1.5em;
+    font-size: 1.3em;
     width: 100%;
     padding: 16px 32px;
     margin: 4px 2px;
@@ -40,19 +45,19 @@
 
 .radio-group {
   padding: 12px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: left;
   width: 100%;
 
   input {
-    margin: 10px;
-    font-size: 0.7em;
+    margin: 18px;
+    font-size: 0.6em;
     outline: none;
   }
 }
 
 .checkbox-group {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding: 12px;
   text-align: left;
   width: 100%;

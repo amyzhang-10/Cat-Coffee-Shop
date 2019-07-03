@@ -1,27 +1,31 @@
 // Logo styles
-a {
-  text-decoration: none;
-  margin-bottom: 20px;
-  .logo1 {
-    max-width: 65px;
-    height: auto;
-  }
-  .logo2 {
-    max-width: 100%;
-    height: 45px;
-  }
-}
-
-@media (max-width: $phonePortrait) {
+header {
   a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-decoration: none;
+
     .logo1 {
-      max-width: 60px;
+      max-width: 65px;
+      height: auto;
+      margin-bottom: 20px;
     }
     .logo2 {
-      height: 20px;
+      max-width: 100%;
+      height: 45px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: $phonePortrait) {
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .logo1 {
+        max-width: 60px;
+      }
+      .logo2 {
+        height: 20px;
+      }
     }
   }
 }
