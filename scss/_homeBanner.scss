@@ -14,37 +14,43 @@
     @include flex-center;
     text-align: center;
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 70%;
+    left: 22%;
     transform: translate(-50%, -50%);
-    font-family: $paragraph-font;
+    font-family: $opening-font;
   }
 
   h1 {
-    font-size: 4.2em;
+    font-size: 3.5em;
     margin-bottom: 40px;
   }
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 40px;
   }
-}
 
-@media (max-width: $tabletLandscape) {
-  .banner {
+  @media (max-width: $tabletLandscape) {
     background-attachment: fixed;
     .hero-text {
-      text-align: center;
       position: absolute;
-      bottom: -60%;
-      left: 50%;
+      top: 70%;
+      left: 22%;
       transform: translate(-50%, -50%);
     }
     h1 {
-      font-size: 2.8em;
+      font-size: 3em;
     }
     h3 {
-      font-size: 2em;
+      font-size: 1.8em;
+    }
+  }
+
+  @media (max-width: $tabletPortrait) {
+    .hero-text {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

@@ -6,12 +6,10 @@ header {
     .logo1 {
       max-width: 65px;
       height: auto;
-      margin-bottom: 20px;
     }
     .logo2 {
       max-width: 100%;
-      height: 45px;
-      margin-bottom: 20px;
+      height: 40px;
     }
   }
 
@@ -21,7 +19,7 @@ header {
       flex-direction: column;
       justify-content: center;
       .logo1 {
-        max-width: 60px;
+        max-width: 50px;
       }
       .logo2 {
         height: 20px;

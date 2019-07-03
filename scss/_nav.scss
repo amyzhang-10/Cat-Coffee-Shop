@@ -39,19 +39,6 @@ nav {
   }
 
   @media (max-width: $tabletPortrait) {
-    // position: absolute;
-    // top: 0%;
-    // left: 0;
-    // width: 100%;
-    // min-height: 90vh;
-    // margin: 0;
-    // background-color: rgba(white, 0.5);
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // transform: scale(0);
-    // z-index: 1;
-
     height: 0;
     overflow: hidden;
     width: calc(100% + 60px);
@@ -61,8 +48,6 @@ nav {
     }
 
     .show & {
-      // transform: scale(1.2);
-      // transition: 0.3s;
       margin-top: 20px;
       height: 260px;
     }
