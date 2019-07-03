@@ -19,7 +19,7 @@
     .image-0#{$i}{
         grid-area:image-0#{$i};
     }
-
+}
 
 
 
@@ -35,12 +35,12 @@
 
 .adoption-hovereffect .adoption-overlay {  
     position: absolute;
-    overflow: hidden;
+    // overflow: hidden;
     width: 80%;
-    height: 80%;
+    height: 70%;
     left: 10%;
-    top: 30%;
-    border-bottom: 1px solid #FFF;
+    top: 10%;
+    // border-bottom: 1px solid #FFF;
     border-top: 1px solid #FFF;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -108,16 +108,13 @@
     transform: translate3d(0, 0, 0);
 }
 
-
 // adoption page gallery end
 
 
 
 
 // adoption page donation style
-.donation{
-    position: relative;
-}
+
 .donation-img{
     width: 80%;
     margin-left:8%; 
@@ -150,11 +147,8 @@
         "image-07     image-08"  
         "image-09         .    "	
     } 
-    .donation{
-        display: flex;
-    }
     .donation-img{
-        width: 40%;
+        width: 50%;
     }
 
     .adoption-contact li{
@@ -163,6 +157,10 @@
 
 }
 
+
+@media (min-width:600px){
+
+}
 
 
 // adoption page gallery 1000px
@@ -183,4 +181,3 @@
     }
     
     
-}

@@ -16,9 +16,10 @@
 #back-to-top-button {
     display: inline-block;
     background-color: #FF9800;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     text-align: center;
+    font-size: 2em;
     border-radius: 10px;
     position: fixed;
     bottom: 120px;
@@ -28,10 +29,10 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-    padding-top:15px;
+    padding-top:5px;
   }
+
   #back-to-top-button::after {
-    
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
@@ -54,25 +55,25 @@
 // adoption page back to top button style end
 
 // Donate button style
-.donate_btn {
-  position: absolute;
-  z-index: 5;
-  top:40%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  padding:10px;
-  border-radius: 20px;
-  font-size: 1.2em;
-  color: white;
-  background: rgb(231, 143, 11);
-  font-family: $header-font;
+.donate-btn{
+  display: block;
+  padding:15px;
+  border:1px solid rgb(252, 250, 248);
+  border-radius: 10px;
+  margin-left:8%;
+  background-color: rgba(226, 141, 12, 0.664);
+  transition: background 500ms ease;
+}
+.donate-btn:hover,
+.donate-btn:active,
+.donate-btn:focus{
+  background-color:rgba(192, 191, 190, 0.822);
 }
 
-
-// // Button
-// @media (max-width: 1980px) {
-//   .booknow-btn button {
-//     font-size: 1.2em;
-//     padding: 10px;
-//   }
-// }
+// donation button min-width 800px
+@media(min-width:800px){
+  .donate-btn{
+    padding:20px;
+    font-size: 1em;
+  }
+}
