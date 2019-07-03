@@ -228,14 +228,52 @@
       <div id='donation_form' class="donation-form">
         <h1>Cat & Coffee</h1>
 
-      <section class="donation">
-        <div class="donation-img">
-          <img
-            src="/images/donate-cat-coffee.jpg"
-            alt="black kitten with text"
-          />
-          <button id="donate_btn" class="donate_btn">Donate</button>
-        </div>
+        <div class="donation-inputs">
+          <h3>Personal Information</h3>
+          <form class="donation-form-email" id="donation-form-email">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+
+          </form>
+      
+
+        <div class="donation-inputs-value">
+          <h3>Payment</h3>
+
+          <label for="payment">Payment Amont: </label>
+          <input type="Amont" id="Amont" name="Amont">
+
+          <label for="card number">Card Number: </label>
+          <input type="Card" id="Card" name="Card">
+
+          <h3>Payment Option</h3>
+          <select>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Master Card">Master Card</option>
+          </select>
+
+
+          <h3>Expiration Date</h3>
+          <label for="month">Month: </label>
+          <input type="month" id="month" name="month">
+
+          <label for="Year">Year: </label>
+          <input type="Years" id="Years" name="Years">
+
+          <label for="CVV">CVV: </label>
+          <input type="CVV" id="CVV" name="CVV">
+
+
+        <input type="submit" value="Submit">
+
+
+      </div> <!-- End donation-form-->
+    </div>
+
 
         <div class="adoption-contact">
           <ul>
