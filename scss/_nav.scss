@@ -1,7 +1,7 @@
 // Main Navigation Styles
 nav {
   // locally scoped variable
-  $height: 76px;
+  $height: 60px;
   $border: 1px solid rgb(0, 0, 0);
   height: $height;
 
@@ -33,31 +33,42 @@ nav {
   }
 
   @media (max-width: $tabletLandscape) {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    min-height: 90vh;
-    margin: 0;
-    background-color: rgba(white, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(0);
-    z-index: 1;
+    a {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: $tabletPortrait) {
+    // position: absolute;
+    // top: 0%;
+    // left: 0;
+    // width: 100%;
+    // min-height: 90vh;
+    // margin: 0;
+    // background-color: rgba(white, 0.5);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // transform: scale(0);
+    // z-index: 1;
+
+    height: 0;
+    overflow: hidden;
+    width: calc(100% + 60px);
 
     nav.activated {
       transition: all 0.3s ease-in-out;
     }
 
     .show & {
-      transform: scale(1.2);
-      transition: 0.3s;
+      // transform: scale(1.2);
+      // transition: 0.3s;
+      margin-top: 20px;
+      height: 250px;
     }
     ul {
       @include flex-center;
       text-align: center;
-      width: 200px;
     }
 
     li {
@@ -69,7 +80,6 @@ nav {
 
     a {
       border-top: $border;
-
       #{$link-hover-selector} {
         height: $height;
         background-color: rgb(236, 133, 35);

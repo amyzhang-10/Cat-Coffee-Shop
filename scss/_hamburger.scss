@@ -3,7 +3,7 @@
 .menu_btn {
   display: none;
 
-  @media (max-width: $tabletLandscape) {
+  @media (max-width: $tabletPortrait) {
     display: block;
     width: 40px;
     background-color: transparent;
