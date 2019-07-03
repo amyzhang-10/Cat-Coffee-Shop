@@ -16,7 +16,6 @@ function removeTransition(e) {
     nav.classList.remove("activated");
   }
 }
-
 hamburger.addEventListener("mousedown", function(e) {
   e.preventDefault();
 });

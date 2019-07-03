@@ -3,7 +3,7 @@
 footer {
   margin: 0 auto;
   padding: $padding/2;
-  border-top: 2px solid #000000;
+  border-top: 1px solid #000000;
   @include flex-layout-row;
 
   a {

@@ -1,5 +1,5 @@
 // Variables
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900|Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900|Ubuntu&display=swap");
 // Colors
 $wrapper-bg-color: #e4e4e4bb;
 
@@ -8,21 +8,20 @@ $text-color-dark: black;
 $text-color-light: white;
 
 // Fonts
-$body-font: "Ubuntu", sans-serif;
-$paragraph-font: "Raleway", sans-serif;
-$header-font:'Ubuntu', sans-serif;
-$opening-font:'Raleway', sans-serif;
+$header-font: "Ubuntu", sans-serif;
+$opening-font: "Raleway", sans-serif;
 
 // Typographic Defualts
-$line-height: 1.4;
+$line-height: 1.8;
 
 // Layout variables
 $padding: 30px;
+
 // Grid Values
 $gutter: 2;
 
 // List style
-$list-style:none;
+$list-style: none;
 
 // Function to
 // Convert Px to Ems

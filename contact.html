@@ -57,6 +57,7 @@
       <!--End of header-->
 
       <main>
+        <h1 class="contact-heading">Contact</h1>
         <div class="contact-section">
           <section class="reservation-form">
             <form action="/" method="POST">
@@ -96,6 +97,37 @@
                   <option value="6">6</option>
                   <option value="8">8</option>
                 </select>
+              </div>
+
+              <div class="radio-group">
+                <label for="lounge">Select your Lounge: </label><br />
+                <input
+                  type="radio"
+                  name="lounge"
+                  id="loungeA"
+                  value="loungeA"
+                />
+                <label for="loungeA">Lounge A</label><br />
+                <input
+                  type="radio"
+                  name="lounge"
+                  id="loungeB"
+                  value="loungeB"
+                />
+                <label for="loungeB">Lounge B</label>
+              </div>
+
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="car-park"
+                  id="car-park"
+                  value="car-park"
+                />
+                <label for="car-park"
+                  >Please let me know if free parking is available at the booked
+                  time</label
+                >
               </div>
 
               <div class="input-group textarea-group">
@@ -183,15 +215,18 @@
               </caption>
               <tr>
                 <td>
-                  <img
-                    src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/instagram.png"
-                    alt="Instagram"
-                  />
-
-                  <img
-                    src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/facebook.png"
-                    alt="Facebook"
-                  />
+                  <a href="https://www.instagram.com/">
+                    <img
+                      src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/instagram.png"
+                      alt="Instagram"
+                  /></a>
+                </td>
+                <td>
+                  <a href="https://www.facebook.com/">
+                    <img
+                      src="http://ssriranjani.bcitwebdeveloper.ca/cat-coffee-project/assets/facebook.png"
+                      alt="Facebook"
+                  /></a>
                 </td>
               </tr>
             </table>
@@ -224,7 +259,7 @@
       </footer>
       <!--End of footer-->
       <div class="copy-right">
-        <p>Copyright 2019</p>
+        <p>&copy; Copyright 2019</p>
         <a href="credit.html"> <p>Image credits</p></a>
       </div>
     </div>
