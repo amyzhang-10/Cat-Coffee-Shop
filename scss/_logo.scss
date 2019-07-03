@@ -1,0 +1,29 @@
+// Logo styles
+header {
+  a {
+    text-decoration: none;
+
+    .logo1 {
+      max-width: 65px;
+      height: auto;
+    }
+    .logo2 {
+      max-width: 100%;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: $phonePortrait) {
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .logo1 {
+        max-width: 50px;
+      }
+      .logo2 {
+        height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//copy right section Styles
+
+.copy-right {
+  text-align: center;
+  font-size: 1.2em;
+
+  a {
+    color: rgb(236, 133, 35);
+    text-decoration: none;
+    outline: none;
+
+    #{$link-hover-selector} {
+      background-color: rgb(236, 133, 35);
+      cursor: pointer;
+    }
+  }
+}

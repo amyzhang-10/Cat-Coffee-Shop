@@ -1,0 +1,74 @@
+// Main Navigation Styles
+nav {
+  // locally scoped variable
+  $height: 64px;
+  $border: 1px solid rgb(0, 0, 0);
+  height: $height;
+
+  ul {
+    @include flatten;
+    @include ul-list;
+    display: flex;
+  }
+
+  li {
+    flex: 1;
+  }
+
+  a {
+    display: block;
+    color: $text-color-dark;
+    line-height: $height;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    outline: none;
+    padding: 0 25px;
+    cursor: pointer;
+
+    #{$link-hover-selector} {
+      height: $height;
+      background-color: rgb(236, 133, 35);
+    }
+  }
+
+  @media (max-width: $tabletLandscape) {
+    a {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: $tabletPortrait) {
+    height: 0;
+    overflow: hidden;
+    width: calc(100% + 60px);
+
+    nav.activated {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .show & {
+      margin-top: 20px;
+      height: 260px;
+    }
+    ul {
+      @include flex-center;
+      text-align: center;
+    }
+
+    li {
+      width: 100%;
+    }
+    li:last-child {
+      border-bottom: $border;
+    }
+
+    a {
+      border-top: $border;
+      #{$link-hover-selector} {
+        height: $height;
+        background-color: rgb(236, 133, 35);
+      }
+    }
+  }
+}
