@@ -14,4 +14,8 @@
       cursor: pointer;
     }
   }
+
+  @media (max-width: $phoneLandscape) {
+    font-size: 0.6em;
+  }
 }

@@ -23,7 +23,20 @@ footer,
       }
     }
     td {
-      font-size: 1em;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-width: $phonePortrait) {
+  footer {
+    table {
+      h3 {
+        font-size: 1em;
+      }
+    }
+    td {
+      font-size: 0.8em;
     }
   }
 }
