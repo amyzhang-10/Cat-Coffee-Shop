@@ -29,10 +29,15 @@ html {
 .donation-form{
     border:1px solid rgb(119, 118, 116);
     border-radius: 10px;
-    padding:10px;
+    padding:20px;
     display:none;
 }
-
+.donation-form input{
+    border:1px solid rgb(141, 139, 139);
+    border-radius: 5px;
+    padding:4px;
+    margin: 5px;
+}
 .donation-form h1{
     margin:10px;
 }
@@ -40,8 +45,8 @@ html {
     margin-bottom: 5px;
 }
 
-.donation-inputs-radio{
-    margin:5px;
+.donation-inputs-value section{
+    border:1px solid rgb(119, 118, 116);
 }
 // Adoption page body style end
 
