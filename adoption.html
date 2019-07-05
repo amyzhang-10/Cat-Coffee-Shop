@@ -223,80 +223,88 @@
             </div>
           </div>
 
-          <div class="adoption-hovereffect">
-            <img
-              class="image-09"
-              src="/images/cat-gallery-11.jpg"
-              alt="cat with grey background"
-            />
-            <div class="adoption-overlay">
-              <h3>Duster</h3>
-              <ul>
-                <li>Gender: Female</li>
-                <li>Animal ID: 890955</li>
-                <li>Breed:Domestic Longhair</li>
-                <li>Age: 4 Years 3 Weeks</li>
-                <li>Shelter: East Kootenay</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="adoption-hovereffect">
+          <img class="image-09" src="/images/cat-gallery-11.jpg" alt="cat with grey background">
+          <div class="adoption-overlay">
+            <h3>Duster</h3>
+            <ul>
+              <li>Gender: Female</li>
+              <li> Animal ID: 890955</li>
+              <li> Breed:Domestic Longhair</li>
+              <li> Age: 4 Years 3 Weeks </li>
+              <li> Shelter: East Kootenay</li>
+            </ul>
+          </div> <!-- End adoption-overlay -->
+         
+        </div><!-- End adoption-hovereffect -->
 
-      <section class="donation-section">
-        <div class="donation-img">
-          <img
-            src="/images/donate-cat-coffee.jpg"
-            alt="black kitten with text"
-          />
+      </div><!-- End adoption-gallery-->
+    </section>
 
-          <button id="donate_btn" class="donate-btn">Donate</button>
 
-          <div id="donation_form" class="donation-form">
-            <h1>Cat & Coffee</h1>
+    <section class="donation-section">
+      <div class="donation-img">
+        <img src="/images/donate-cat-coffee.jpg" alt="black kitten with text">
+      
 
-            <div class="donation-inputs">
-              <h3>Personal Information</h3>
-              <form class="donation-form-email" id="donation-form-email">
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" />
+      <button id="donate_btn" class="donate-btn">Donate</button>
+
+      <div id='donation_form' class="donation-form">
+        <h1>Cat & Coffee</h1>
+
+        <div class="donation-inputs">
+          <h3>Personal Information</h3>
+          <form class="donation-form-email" id="donation-form-email">
+            <label for="name">Name: </label>
+            <input type="text" id="donation_name" name="donation-name">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="donation_email" name="donation-email">
+
+          </form>
+      
+
+        <div class="donation-inputs-value">
+          <h3>Payment</h3>
+
+          <label for="payment">Payment Amount: </label>
+          <br>
+          <input type="text" id="donation_Amont" name="donation-Amont">
+            <br>
+          <label for="card number">Card Number: </label>
+          <br>
+          <input type="text" id="donation_Card" name="donation-Card">
+
+          <h3>Payment Option</h3>
+          <select>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Master Card">Master Card</option>
+          </select>
 
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="email" />
               </form>
             </div>
 
-            <div class="donation-inputs-value">
-              <h3>Payment</h3>
+          <h3>Expiration Date</h3>
+          <label for="month">Month: </label>
+          <input type="month" id="donation_month" name="donation-month">
+          <br>
+          <label for="Year">Year: </label>
+          <input type="text" id="donation_Years" name="donation-Years">
+          <br>
+          <label for="CVV">CVV: </label>
+          <input type="text" id="donation_CVV" name="donation-CVV">
+          <br>
 
-              <label for="payment">Payment Amont: </label>
-              <input type="Amount" id="Amont" name="Amont" />
+          <button id="adoption-sub-btn">Submit</button>
 
-              <label for="card number">Card Number: </label>
-              <input type="Card" id="Card" name="Card" />
-
-              <h3>Payment Option</h3>
-              <select>
-                <option value="Credit Card">Credit Card</option>
-                <option value="Debit Card">Debit Card</option>
-                <option value="Master Card">Master Card</option>
-              </select>
-
-              <h3>Expiration Date</h3>
-              <label for="month">Month: </label>
-              <input type="month" id="month" name="month" />
-
-              <label for="Year">Year: </label>
-              <input type="Years" id="Years" name="Years" />
-
-              <label for="CVV">CVV: </label>
-              <input type="CVV" id="CVV" name="CVV" />
-
-              <input type="submit" value="Submit" />
-            </div>
-            <!-- End donation-form-->
-          </div>
-        </div>
+      </div> <!-- End donation-inputs-value -->
+      </div><!-- End donation-inputs-->
+      </div> <!-- End donation-form-->
+      </div>
+ 
 
         <div class="adoption-contact">
           <ul>
@@ -305,12 +313,11 @@
             <li>Visit the Link Below for More Adoption Information</li>
             <li>
               <a href="https://www.catadoption.com"
-                >https://www.catadoption.com</a
-              >
+                >https://www.catadoption.com</a>
             </li>
           </ul>
         </div>
-      </section>
+     </section>
 
       <footer>
         <div class="footer-left-column">
@@ -386,22 +393,25 @@
               </tr>
             </table>
           </div>
-        </div>
-        <!--End of footer-right-column-->
-      </footer>
-      <!--End of footer-->
+        </div><!--End of footer-right-column-->
+        
+      </footer> <!--End of footer-->
+     
       <div class="copy-right">
         <p>&copy; Copyright 2019</p>
         <a href="credit.html"> <p>Image credits</p></a>
-      </div>
-    </div>
-    <!--End of wrapper-->
+      </div> <!--End of footer-center-column-->
+     
+  </div><!--End of wrapper-->
+  
 
-    <!-- script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/adoption-script.js"></script>
-  </body>
-  <!--End of body-->
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/adoption-script.js"></script>
+
+</body>
+<!--End of body-->
+
 </html>
 <!--End of html-->
