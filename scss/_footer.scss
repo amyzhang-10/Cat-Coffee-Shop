@@ -36,3 +36,11 @@ footer {
     @include flex-center;
   }
 }
+
+@media (max-width: $phoneLandscape) {
+  footer {
+    h3 {
+      font-size: 0.5em;
+    }
+  }
+}
