@@ -35,11 +35,10 @@
 
 .adoption-hovereffect .adoption-overlay {  
     position: absolute;
-    // overflow: hidden;
-    width: 80%;
-    height: 70%;
-    left: 10%;
+    width: 100%;
+    height: 100%;
     top: 10%;
+    
     border-top: 1px solid #FFF;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -69,13 +68,14 @@
 }
 
 .adoption-overlay{
+    font-size: 0.7em;
     text-align: center;
     position: relative;
     list-style:$list-style;
     background-color: transparent;
     color: #FFF;
-    padding: 1em 0;
-    opacity: 0;
+    padding:0;
+    opacity:0;
     filter: alpha(opacity = 0);
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -83,6 +83,7 @@
     transform: translate3d(0, -100%, 0);
 }
 .adoption-overlay li{
+    padding-right:40px;
     list-style: none;
     font-family: $opening-font
 }
@@ -126,6 +127,9 @@
   font-family: $opening-font;
   font-size: 1em;
   text-align: center;
+}
+.adoption-contact ul{
+    padding:0;
 }
 // adoption page donation style end
 
