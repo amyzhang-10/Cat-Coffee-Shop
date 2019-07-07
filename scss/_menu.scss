@@ -27,14 +27,15 @@
 }
 .menu {
   background: rgba(245, 239, 239, 0.8);
-  padding: 30px;
-  font-size: 2em;
+  padding: 0px;
 
   table {
     width: 100%;
+    
   }
 
   td {
+    font-size: 1em;
     padding: {
       top: 30px;
       bottom: 20px;
@@ -44,23 +45,24 @@
   tr {
     td:last-child {
       text-align: right;
-      padding-right: 50px;
-      padding-left: 0;
+      padding-right:40px;
+      padding-left: 0px;
     }
     td:first-child {
       text-align: left;
-      padding-left: 50px;
-      padding-right: 0;
+      padding-left: 40px;
+      padding-right: 0px;
     }
   }
 
   caption {
     text-decoration: underline;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     padding: {
-      left: 50px;
+      left:40px;
       bottom: 20px;
+      top:20px;
     }
   }
 }
@@ -86,46 +88,13 @@
   }
 
   .menu {
-    padding: 30px;
+    padding: 0px;
   }
 
   td {
     padding: {
       top: 20px;
       bottom: 10px;
-    }
-  }
-
-  tr {
-    td:last-child {
-      padding-right: 30px;
-    }
-
-    td:first-child {
-      padding-left: 30px;
-    }
-  }
-
-  caption {
-    padding: {
-      left: 40px;
-    }
-  }
-
-  .description {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: $tabletLandscape) {
-  .menu {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  td {
-    padding: {
-      top: 20px;
-      bottom: 0;
     }
   }
 
@@ -141,7 +110,75 @@
 
   caption {
     padding: {
+      left:10px;
+    }
+  }
+
+  .description {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: $tabletLandscape) {
+  .menu {
+    padding: 0px;
+    font-size: 0.9rem;
+  }
+
+  td {
+    padding: {
+      top: 20px;
+      bottom: 0;
+    }
+  }
+
+  tr {
+    td:last-child {
+      padding-right: 5px;
+    }
+
+    td:first-child {
+      padding-left: 5px;
+    }
+  }
+
+  caption {
+    padding: {
       left: 10px;
+    }
+  }
+
+  .description {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: $tabletPortrait) {
+  .menu {
+    padding: 0px;
+    font-size: 0.9rem;
+  }
+
+  td {
+    padding: {
+      top: 20px;
+      bottom: 0;
+    }
+  }
+
+  tr {
+    td:last-child {
+      padding-right: 0px;
+    }
+
+    td:first-child {
+      padding-left: 0px;
+    }
+  }
+
+  caption {
+    padding: {
+      left: 0px;
     }
   }
 
@@ -177,7 +214,7 @@
     grid-column: span 3;
   }
   caption {
-    padding-left: 40px;
+    padding-left: 30px;
   }
   td {
     padding: {
@@ -188,11 +225,11 @@
 
   tr {
     td:last-child {
-      padding-right: 60px;
+      padding-right:30px;
     }
 
     td:first-child {
-      padding-left: 60px;
+      padding-left: 30px;
     }
   }
   .description {

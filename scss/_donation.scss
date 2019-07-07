@@ -1,17 +1,17 @@
 // Adoption page body style
 .adoption-introduction {
   text-align: center;
-  margin: 5%;
 }
 
 .adoption-introduction h1 {
   margin-bottom: 30px;
   font-family: $header-font;
 }
-.adoption-p {
-  margin-left: 20%;
-  margin-right: 20%;
-  line-height: 1.8;
+.adoption-p p{ 
+    color: rgb(71, 70, 70);
+  padding:0 auto;
+  margin-bottom: 10px;
+  line-height:1.4;
   font-family: $opening-font;
 }
 
@@ -63,6 +63,9 @@
   border: 1px solid rgb(119, 118, 116);
 }
 // Adoption page body style end
+
+
+
 
 // adoption page min-width 500px
 @media (min-width: 500px) {
