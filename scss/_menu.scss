@@ -19,7 +19,7 @@
 .modules-title {
   grid-column: span 3;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: {
     top: 30px;
     bottom: 30px;
@@ -27,8 +27,9 @@
 }
 .menu {
   background: rgba(245, 239, 239, 0.8);
-  padding: 0px;
-
+  padding: {
+    bottom:20px;
+  }
   table {
     width: 100%;
     
@@ -45,12 +46,12 @@
   tr {
     td:last-child {
       text-align: right;
-      padding-right:40px;
+      padding-right:60px;
       padding-left: 0px;
     }
     td:first-child {
       text-align: left;
-      padding-left: 40px;
+      padding-left: 60px;
       padding-right: 0px;
     }
   }
@@ -60,9 +61,9 @@
     text-align: left;
     font-size: 1.2em;
     padding: {
-      left:40px;
-      bottom: 20px;
-      top:20px;
+      left:60px;
+      bottom: 10px;
+      top:30px;
     }
   }
 }
@@ -89,63 +90,68 @@
 
   .menu {
     padding: 0px;
-  }
+  
 
   td {
     padding: {
       top: 20px;
+      bottom: 10px;
+      right : 0px;
+      left:0px;
+    }
+  }
+
+  tr {
+    td:last-child {
+      padding-right: 40px;
+    }
+
+    td:first-child {
+      padding-left: 40px;
+    }
+  }
+  
+  caption {
+    padding: {
+      left:40px;
+    }
+  }
+}
+
+  .description {
+    width: 50%;
+  }
+
+}
+@media only screen and (max-width: $tabletLandscape) {
+  .menu {
+    padding: 0px;
+    font-size: 0.9rem;
+  
+
+  td {
+    padding: {
+      top: 10px;
       bottom: 10px;
     }
   }
 
   tr {
     td:last-child {
-      padding-right: 10px;
+      padding-right: 20px;
     }
 
     td:first-child {
-      padding-left: 10px;
+      padding-left: 20px;
     }
   }
 
   caption {
     padding: {
-      left:10px;
+      left: 20px;
     }
-  }
-
-  .description {
-    width: 50%;
   }
 }
-@media only screen and (max-width: $tabletLandscape) {
-  .menu {
-    padding: 0px;
-    font-size: 0.9rem;
-  }
-
-  td {
-    padding: {
-      top: 20px;
-      bottom: 0;
-    }
-  }
-
-  tr {
-    td:last-child {
-      padding-right: 5px;
-    }
-
-    td:first-child {
-      padding-left: 5px;
-    }
-  }
-
-  caption {
-    padding: {
-      left: 10px;
-    }
-  }
 
   .description {
     width: 70%;
@@ -157,37 +163,40 @@
   .menu {
     padding: 0px;
     font-size: 0.9rem;
-  }
+  
 
   td {
     padding: {
-      top: 20px;
-      bottom: 0;
+      top: 10px;
+      bottom: 10px;
     }
   }
 
   tr {
     td:last-child {
-      padding-right: 0px;
+      padding-right: 20px;
     }
 
     td:first-child {
-      padding-left: 0px;
+      padding-left: 20px;
     }
   }
 
   caption {
     padding: {
-      left: 0px;
+      left: 20px;
     }
   }
+}
 
   .description {
     width: 70%;
   }
+
+
 }
 
-@media only screen and (max-width: $phoneLandscape) {
+@media only screen and (max-width:720px) {
   .modules {
     grid-column-gap: 0;
     grid-row-gap: 40px;
@@ -198,7 +207,7 @@
       bottom: 40px;
     }
     font-size: 1rem;
-  }
+ 
 
   .modules-title {
     grid-column: span 3;
@@ -214,7 +223,7 @@
     grid-column: span 3;
   }
   caption {
-    padding-left: 30px;
+    padding-left: 60px;
   }
   td {
     padding: {
@@ -225,13 +234,14 @@
 
   tr {
     td:last-child {
-      padding-right:30px;
+      padding-right:60px;
     }
 
     td:first-child {
-      padding-left: 30px;
+      padding-left: 60px;
     }
   }
+}
   .description {
     padding-top: 30px;
     width: 100%;
@@ -245,7 +255,7 @@
       top: 10px;
       bottom: 40px;
     }
-  }
+  
 
   caption {
     padding-left: 40px;
@@ -266,6 +276,8 @@
       padding-left: 40px;
     }
   }
+}
+
   .description {
     padding-top: 30px;
     width: 100%;
@@ -282,7 +294,7 @@
       bottom: 30px;
     }
     font-size: 1rem;
-  }
+  
 
   caption {
     padding-left: 10px;
@@ -303,6 +315,39 @@
       padding-left: 10px;
     }
   }
+}
+  .description {
+    padding-top: 30px;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width:290px) {
+  .modules {
+    font-size: .8rem;
+  
+
+  caption {
+    padding-left: 5px;
+  }
+  td {
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+  }
+
+  tr {
+    td:last-child {
+      padding-right: 5px;
+    }
+
+    td:first-child {
+      padding-left: 5px;
+    }
+  }
+}
   .description {
     padding-top: 30px;
     width: 100%;
