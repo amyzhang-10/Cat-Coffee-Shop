@@ -75,6 +75,11 @@
 }
 // adoption page min-width 600px
 @media (min-width: 600px) {
+    .adoption-p p{
+        width: 60%;
+        margin-left:20%;
+        margin-bottom: 5%;
+    }
   .donation-section {
     display: flex;
   }
