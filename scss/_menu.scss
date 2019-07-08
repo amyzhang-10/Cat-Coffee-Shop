@@ -331,13 +331,7 @@
   caption {
     padding-left: 5px;
   }
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
-    }
-  }
-
+  
   tr {
     td:last-child {
       padding-right: 5px;
@@ -348,8 +342,4 @@
     }
   }
 }
-  .description {
-    padding-top: 30px;
-    width: 100%;
-  }
 }
