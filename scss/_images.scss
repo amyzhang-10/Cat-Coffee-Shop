@@ -26,8 +26,8 @@
 .adoption-hovereffect {
     width: 100%;
     height: 100%;
-    float: left;
-    overflow: hidden;
+    // float: left;
+    // overflow: hidden;
     position: relative;
     text-align: center;
     cursor: default;
@@ -134,15 +134,16 @@
 
 
 
-// adoption page  gallery 375px
+// adoption page  gallery 400px
 @media (min-width: 400px){
     .adoption-hovereffect .adoption-overlay{
-        top:20%;
-        font-size:1em;
+        top:25%;
+        font-size:0.9em;
+        line-height: 1.2;
     }
 }  
 // adoption page gallery 500px
-@media (min-width:500px){
+@media (min-width:600px){
     .adoption-gallery{
         width: 80%;
         margin-left:10%;
@@ -165,11 +166,16 @@
         font-size: 0.8em;
     }
 
+    .adoption-hovereffect .adoption-overlay{
+    font-size: 0.6em;
 }
+} 
 
-
-@media (min-width:600px){
-
+// adoption page gallery 700px
+@media  (min-width:700px){
+    .adoption-hovereffect .adoption-overlay{
+        font-size: 0.8em;
+    }
 }
 
 
@@ -187,9 +193,23 @@
         "image-04     image-05  image-06"    
         "image-07     image-08  image-09"	
     }
-    .adoption-hovereffect .adoption-overlay {
-        top:5%;
+    .donation-img{
+        width: 40%;
+        margin-right:5%;
+    }
+    .adoption-hovereffect .adoption-overlay{
+        top:10%;
+        font-size: 1em;
+        line-height: 1;
     }
     }
     
     
+// adoption page gallery 1200px
+@media  (min-width:1180px){
+    .adoption-hovereffect .adoption-overlay{
+        top:30%;
+        font-size: 1em;
+        line-height: 1;
+    }
+}
