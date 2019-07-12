@@ -1,5 +1,5 @@
 /* modules style  */
-html{
+html {
   font-family: $opening-font;
 }
 .modules {
@@ -30,12 +30,12 @@ html{
 .menu {
   background: rgba(245, 239, 239, 0.8);
   padding: {
-    bottom:30px;
+    bottom: 30px;
   }
   table {
     width: 100%;
   }
-  
+
   td {
     font-size: 1em;
     padding: {
@@ -47,7 +47,7 @@ html{
   tr {
     td:last-child {
       text-align: right;
-      padding-right:60px;
+      padding-right: 60px;
       padding-left: 0px;
     }
     td:first-child {
@@ -62,9 +62,9 @@ html{
     text-align: left;
     font-size: 1.2em;
     padding: {
-      left:60px;
+      left: 60px;
       bottom: 10px;
-      top:30px;
+      top: 30px;
     }
   }
 }
@@ -89,13 +89,12 @@ html{
     grid-column-gap: 20px;
   }
 
-
   td {
     padding: {
       top: 20px;
       bottom: 10px;
-      right : 0px;
-      left:0px;
+      right: 0px;
+      left: 0px;
     }
   }
 
@@ -108,94 +107,87 @@ html{
       padding-left: 40px;
     }
   }
-  
+
   caption {
     padding: {
-      left:40px;
+      left: 40px;
     }
   }
-}
 
   .description {
     width: 50%;
   }
-
 }
 @media only screen and (max-width: $tabletLandscape) {
   .menu {
     font-size: 0.9rem;
-  
 
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 20px;
+      }
+
+      td:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    caption {
+      padding: {
+        left: 20px;
+      }
     }
   }
-
-  tr {
-    td:last-child {
-      padding-right: 20px;
-    }
-
-    td:first-child {
-      padding-left: 20px;
-    }
-  }
-
-  caption {
-    padding: {
-      left: 20px;
-    }
-  }
-}
 
   .description {
     width: 70%;
   }
 }
-
 
 @media only screen and (max-width: $tabletPortrait) {
   .menu {
     font-size: 0.9rem;
     padding: {
-      bottom:30px;
+      bottom: 30px;
     }
-  
 
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 20px;
+      }
+
+      td:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    caption {
+      padding: {
+        left: 20px;
+      }
     }
   }
-
-  tr {
-    td:last-child {
-      padding-right: 20px;
-    }
-
-    td:first-child {
-      padding-left: 20px;
-    }
-  }
-
-  caption {
-    padding: {
-      left: 20px;
-    }
-  }
-}
 
   .description {
     width: 70%;
   }
-
-
 }
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width: 720px) {
   .modules {
     grid-column-gap: 0;
     grid-row-gap: 40px;
@@ -206,41 +198,40 @@ html{
       bottom: 40px;
     }
     font-size: 1rem;
- 
 
-  .modules-title {
-    grid-column: span 3;
-    padding-bottom: 0;
-  }
-  .m-01 {
-    grid-column: span 3;
-  }
-  .m-02 {
-    grid-column: span 3;
-  }
-  .m-03 {
-    grid-column: span 3;
-  }
-  caption {
-    padding-left: 70px;
-  }
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
+    .modules-title {
+      grid-column: span 3;
+      padding-bottom: 0;
     }
-  }
-
-  tr {
-    td:last-child {
-      padding-right:70px;
+    .m-01 {
+      grid-column: span 3;
     }
-
-    td:first-child {
+    .m-02 {
+      grid-column: span 3;
+    }
+    .m-03 {
+      grid-column: span 3;
+    }
+    caption {
       padding-left: 70px;
     }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 70px;
+      }
+
+      td:first-child {
+        padding-left: 70px;
+      }
+    }
   }
-}
   .description {
     padding-top: 30px;
     width: 100%;
@@ -254,28 +245,27 @@ html{
       top: 10px;
       bottom: 40px;
     }
-  
 
-  caption {
-    padding-left: 40px;
-  }
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
-    }
-  }
-
-  tr {
-    td:last-child {
-      padding-right: 40px;
-    }
-
-    td:first-child {
+    caption {
       padding-left: 40px;
     }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 40px;
+      }
+
+      td:first-child {
+        padding-left: 40px;
+      }
+    }
   }
-}
 
   .description {
     padding-top: 30px;
@@ -293,52 +283,49 @@ html{
       bottom: 30px;
     }
     font-size: 1rem;
-  
 
-  caption {
-    padding-left: 10px;
-  }
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
-    }
-  }
-
-  tr {
-    td:last-child {
-      padding-right: 10px;
-    }
-
-    td:first-child {
+    caption {
       padding-left: 10px;
     }
+    td {
+      padding: {
+        top: 10px;
+        bottom: 10px;
+      }
+    }
+
+    tr {
+      td:last-child {
+        padding-right: 10px;
+      }
+
+      td:first-child {
+        padding-left: 10px;
+      }
+    }
   }
-}
   .description {
     padding-top: 30px;
     width: 100%;
   }
 }
 
-
-@media only screen and (max-width:290px) {
+@media only screen and (max-width: 290px) {
   .modules {
-    font-size: .8rem;
-  
+    font-size: 0.8rem;
 
-  caption {
-    padding-left: 5px;
-  }
-  
-  tr {
-    td:last-child {
-      padding-right: 5px;
-    }
-
-    td:first-child {
+    caption {
       padding-left: 5px;
     }
+
+    tr {
+      td:last-child {
+        padding-right: 5px;
+      }
+
+      td:first-child {
+        padding-left: 5px;
+      }
+    }
   }
-}
 }

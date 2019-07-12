@@ -6,7 +6,8 @@
   font-size: 1.5em;
 
   #{$link-hover-selector} {
-    background-color: rgba(192, 191, 190, 0.822);
+    background-color: rgba(192, 191, 190);
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
     cursor: pointer;
   }
 

@@ -35,6 +35,11 @@
     margin: 4px 2px;
     cursor: pointer;
     background-color: #ff9800;
+
+    #{$link-hover-selector} {
+      background-color: rgba(119, 118, 116, 0.548);
+      transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    }
   }
 }
 
