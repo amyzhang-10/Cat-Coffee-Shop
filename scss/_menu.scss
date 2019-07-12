@@ -1,5 +1,7 @@
 /* modules style  */
-
+html{
+  font-family: $opening-font;
+}
 .modules {
   background-image: url(../images/best-cat-coffee-shop-01.jpg);
   background-repeat: no-repeat;
@@ -28,13 +30,12 @@
 .menu {
   background: rgba(245, 239, 239, 0.8);
   padding: {
-    bottom:20px;
+    bottom:30px;
   }
   table {
     width: 100%;
-    
   }
-
+  
   td {
     font-size: 1em;
     padding: {
@@ -88,9 +89,6 @@
     grid-column-gap: 20px;
   }
 
-  .menu {
-    padding: 0px;
-  
 
   td {
     padding: {
@@ -125,7 +123,6 @@
 }
 @media only screen and (max-width: $tabletLandscape) {
   .menu {
-    padding: 0px;
     font-size: 0.9rem;
   
 
@@ -161,8 +158,10 @@
 
 @media only screen and (max-width: $tabletPortrait) {
   .menu {
-    padding: 0px;
     font-size: 0.9rem;
+    padding: {
+      bottom:30px;
+    }
   
 
   td {
@@ -201,8 +200,8 @@
     grid-column-gap: 0;
     grid-row-gap: 40px;
     padding: {
-      left: 60px;
-      right: 60px;
+      left: 70px;
+      right: 70px;
       top: 10px;
       bottom: 40px;
     }
@@ -223,7 +222,7 @@
     grid-column: span 3;
   }
   caption {
-    padding-left: 60px;
+    padding-left: 70px;
   }
   td {
     padding: {
@@ -234,11 +233,11 @@
 
   tr {
     td:last-child {
-      padding-right:60px;
+      padding-right:70px;
     }
 
     td:first-child {
-      padding-left: 60px;
+      padding-left: 70px;
     }
   }
 }
@@ -331,13 +330,7 @@
   caption {
     padding-left: 5px;
   }
-  td {
-    padding: {
-      top: 10px;
-      bottom: 10px;
-    }
-  }
-
+  
   tr {
     td:last-child {
       padding-right: 5px;
@@ -348,8 +341,4 @@
     }
   }
 }
-  .description {
-    padding-top: 30px;
-    width: 100%;
-  }
 }
