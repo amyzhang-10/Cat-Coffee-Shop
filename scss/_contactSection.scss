@@ -9,6 +9,7 @@
   font-size: 2em;
 }
 .contact-section {
+  padding: 20px;
   @include flex-layout-row;
   justify-content: space-evenly;
 
